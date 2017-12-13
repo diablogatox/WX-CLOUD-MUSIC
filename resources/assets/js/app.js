@@ -10,7 +10,7 @@ require('./bootstrap');
 //window.Vue = require('vue');
 //window.Yox = require('yox');
 //如果需要兼容低版本浏览器
-window.Yox = require('yox/dist/yox-legacy.min.js');
+window.Avalon = require('avalon2/dist/avalon.js');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
