@@ -96,9 +96,11 @@
         </div>
         
         <script id="template" type="plain/text">
-            <h1>
-                @{{ message }}
-            </h1>
+            <ul>
+                @{{ #each todos }}
+                    <li>@{{ text }}</li>
+                @{{ /each }}
+            </ul>
         </script>
         <script src="js/app.js"></script>
         <script>
@@ -107,7 +109,11 @@
                     el: '#app',
                     template: '#template',
                     data: {
-                        message: 'Hello Yox.js!'
+                        todos: [
+                            { text: 'Leaning Javascript' },
+                            { text: 'Lean Yoxjs' },
+                            { text: 'Build Something Awesome' }
+                        ]
                     }
                 });
             }
